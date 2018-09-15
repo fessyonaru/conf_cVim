@@ -1,0 +1,50 @@
+set smoothscroll
+set noautofocus
+let scrollstep = 100
+"let halfpagescrollpercent = 1000
+map . nextTab
+map , previousTab
+map D scrollFullPageDown
+map U scrollFullPageUp
+map t :tabnew
+map <C-/> clearSearchHighlight
+map \ goBack
+map _ goForward
+map yt :duplicate
+let qmark f = ["https://feedly.com/i/latest"]
+unmap p
+command g tabnew google
+"
+"For VideoSpeedController
+unmap q
+unmap w
+unmap e
+unmap p
+unmap a
+unmap s
+"
+"For SearchEngine
+let searchengine wiki = "https://ja.wikipedia.org/wiki/%s"
+let searchalias w = "wiki"
+let searchengine calil = "https://calil.jp/search?q=%s"
+let searchalias c = "calil"
+let searchengine amazon = "https://www.amazon.co.jp/s/ref=nb_sb_noss_2?__mk_ja_JP=%s&url=search-alias%3Daps&field-keywords=%s"
+let searchalias a = "amazon"
+let searchengine junkudo = "https://honto.jp/netstore/search_10%s.html"
+let searchalias j = "junkudo"
+let searchengine bookwalker = "https://bookwalker.jp/search/?qcat=&word=%s"
+let searchalias b = "bookwalker"
+let searchengine kyorisoku = "https://www.mapion.co.jp/s/route/q=%s/"
+let searchalias k = "kyorisoku"
+let searchengine merukari = "https://www.mercari.com/jp/search/?keyword=%s"
+let searchalias m = "merukari"
+let searchengine streetview = "https://www.google.com/maps/search/%s"
+let searchalias s = "streetview"
+"
+"
+let locale = "jp"
+"
+"For completionengines
+let completionengines = ["google"]
+"For defaultengine
+let defaultengine = "google.co.jp"
